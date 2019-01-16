@@ -1,0 +1,233 @@
+htnm {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+*{
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* wrapper */
+.wrapper{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    margin-bottom: 84px;
+    padding-top: 36px;
+}
+
+/* Logo */
+.logo::first-letter{
+    font-weight: 900;
+    color:rgb(26,188,156);
+}
+.logo{
+    display: inline-block;
+    width: 190px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: rgb(85,82,82);
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+
+/* Navigation */
+.navigation-list{
+    float: right;
+    display: block;
+    margin: 5px 0 0 0;
+}
+.navigation-item:last-child{
+    margin-right: 0;
+}
+.navigation-item{
+    float: left;
+    list-style: none;
+    margin-right: 35px;
+}
+.menu{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(15,1,1);
+}
+.menu:hover,
+.menu:focus{
+    color:rgb(26,188,156);
+}
+
+/* Products section */
+.products{
+    margin-bottom: 73px;
+}
+
+/* Headers */
+.header-section {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif; 
+    height: 83px;
+    color: rgb(81,81,81);
+    text-transform: uppercase;
+    margin-bottom: 84px;
+}
+.header-section:after{
+    content: "";
+    border-bottom: 7px solid #1abc9c;
+    display: block;
+    width: 164px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+/* Main content */
+
+.product-contaner{
+    display: inline-block;
+    height: 290px;
+    width: 255px;
+    text-align: center;
+}
+
+/* Product cards */
+/* Center img in contaner */
+.center::before{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+.img-center{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.products-item:nth-child(4n){
+    margin-right: 0px;
+
+}
+.products-item{
+    width: 255px;
+    height: 328px;
+    background-color: rgb(233,240,253);
+    list-style: none;
+    float: left;
+    margin: 0 30px 33px 0;
+}
+.products-item:hover {
+    cursor: pointer;
+}
+.products-item:hover .producs-item-name{
+    background-color: #1abc9c;
+}
+.products-item:hover .product-item-price{
+    background-color: #7fd9c7;
+}
+
+ .producs-item-name{
+    height: 40px;
+    background-color: #515151;
+    width: 201px;
+    display: block;
+    float: left;
+} 
+.producs-item-name p{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding-left: 14px;
+}
+.product-item-price{
+    height: 40px;
+    background-color: #8c8c8c;
+    width: 54px;
+    float: right;
+    display: block;
+}
+.product-item-price p{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding-left: 14px;
+}
+
+.products-item:nth-child(n+5){
+    margin-bottom: 0;
+}
+
+/* News */
+.news-item{
+    list-style: none;
+    display: block;
+    width: 350px;
+    height: 496px;
+    float: left;
+    margin-right: 30px;
+}
+.news-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.img-news{
+    margin-bottom: 10px;
+}
+.news-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #555252;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 29px;
+}
+.news-header:after{
+    content: "";
+    border-bottom: 3px solid #4ec6ab;
+    display: block;
+    width: 136px;
+    padding-top: 13px;
+}
+li p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6c6969;
+    margin-bottom: 18px;
+}
+.news-button{
+    width: 160px;
+    height: 52px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    background-color: #4ec6ab;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 80px;
+}
+.news-button:hover{
+    cursor: pointer;
+}

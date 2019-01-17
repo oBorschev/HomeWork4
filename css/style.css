@@ -37,7 +37,6 @@ htnm {
 }
 .logo{
     display: inline-block;
-    width: 190px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -50,7 +49,6 @@ htnm {
 /* Navigation */
 .navigation-list{
     float: right;
-    display: block;
     margin: 5px 0 0 0;
 }
 .navigation-item:last-child{
@@ -61,12 +59,14 @@ htnm {
     list-style: none;
     margin-right: 35px;
 }
+/* Menu */
 .menu{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(15,1,1);
+    display: block;
 }
 .menu:hover,
 .menu:focus{
@@ -75,7 +75,7 @@ htnm {
 
 /* Products section */
 .products{
-    margin-bottom: 73px;
+    padding-bottom: 73px;
 }
 
 /* Headers */
@@ -83,7 +83,6 @@ htnm {
     text-align: center;
     font-size: 48px;
     font-family: 'Roboto', sans-serif; 
-    height: 83px;
     color: rgb(81,81,81);
     text-transform: uppercase;
     margin-bottom: 84px;
@@ -94,22 +93,14 @@ htnm {
     display: block;
     width: 164px;
     margin: 0 auto;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 /* Main content */
-
-.product-contaner{
-    display: inline-block;
-    height: 290px;
-    width: 255px;
-    text-align: center;
-}
-
 /* Product cards */
 /* Center img in contaner */
 .center::before{
     display: inline-block;
-    height: 100%;
+    height: 87%;
     vertical-align: middle;
     content: "";
 }
@@ -129,39 +120,55 @@ htnm {
     list-style: none;
     float: left;
     margin: 0 30px 33px 0;
+    text-align: center;
 }
 .products-item:hover {
     cursor: pointer;
 }
-.products-item:hover .producs-item-name{
+.products-item:hover .card-name{
     background-color: #1abc9c;
 }
-.products-item:hover .product-item-price{
+.products-item:hover .card-price{
     background-color: #7fd9c7;
 }
 
  .producs-item-name{
     height: 40px;
+    width: 255px;
+    display: block;
+    margin-bottom: 0;
+} 
+.producs-item-name p{
+    margin-bottom: 0;
+}
+.card-name{
+    box-sizing: border-box;
+    height: 40px;
     background-color: #515151;
     width: 201px;
     display: block;
     float: left;
-} 
-.producs-item-name p{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 18px;
     font-weight: 900;
     line-height: 40px;
     text-transform: uppercase;
+    text-align: left;
     padding-left: 14px;
 }
-.product-item-price{
+.card-price{
     height: 40px;
     background-color: #8c8c8c;
     width: 54px;
     float: right;
     display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 40px;
+    text-transform: uppercase;
 }
 .product-item-price p{
     font-family: 'Roboto', sans-serif;
@@ -178,11 +185,13 @@ htnm {
 }
 
 /* News */
+.news{
+    margin-bottom: 80px;
+}
 .news-item{
     list-style: none;
     display: block;
     width: 350px;
-    height: 496px;
     float: left;
     margin-right: 30px;
 }
@@ -206,7 +215,7 @@ htnm {
     border-bottom: 3px solid #4ec6ab;
     display: block;
     width: 136px;
-    padding-top: 13px;
+    margin-top: 13px;
 }
 li p{
     font-family: 'Open Sans', sans-serif;
@@ -217,6 +226,7 @@ li p{
     margin-bottom: 18px;
 }
 .news-button{
+    box-sizing: border-box;
     width: 160px;
     height: 52px;
     font-family: 'Open Sans', sans-serif;
@@ -226,7 +236,9 @@ li p{
     background-color: #4ec6ab;
     color: #fff;
     border-radius: 7px;
-    margin-bottom: 80px;
+    display: block;
+    text-align: center;
+    padding-top: 14px;
 }
 .news-button:hover{
     cursor: pointer;

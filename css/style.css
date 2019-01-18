@@ -125,10 +125,10 @@ htnm {
 .products-item:hover {
     cursor: pointer;
 }
-.products-item:hover .card-name{
+.products-item:hover .producs-item-name p:first-child{
     background-color: #1abc9c;
 }
-.products-item:hover .card-price{
+.products-item:hover .producs-item-name p:last-child{
     background-color: #7fd9c7;
 }
 
@@ -141,9 +141,8 @@ htnm {
 .producs-item-name p{
     margin-bottom: 0;
 }
-.card-name{
+.producs-item-name p:first-child{
     box-sizing: border-box;
-    height: 40px;
     background-color: #515151;
     width: 201px;
     display: block;
@@ -157,8 +156,7 @@ htnm {
     text-align: left;
     padding-left: 14px;
 }
-.card-price{
-    height: 40px;
+.producs-item-name p:last-child{
     background-color: #8c8c8c;
     width: 54px;
     float: right;
@@ -186,7 +184,7 @@ htnm {
 
 /* News */
 .news{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 .news-item{
     list-style: none;
@@ -238,8 +236,9 @@ li p{
     border-radius: 7px;
     display: block;
     text-align: center;
-    padding-top: 14px;
+    line-height: 52px;
 }
 .news-button:hover{
     cursor: pointer;
+    background-color: #7fd9c7;
 }
